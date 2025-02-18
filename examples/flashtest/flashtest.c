@@ -22,8 +22,8 @@ int main()
 //	FLASH->OBKEYR = FLASH_KEY2;
 
 	// For unlocking programming, in general.
-	FLASH->MODEKEYR = FLASH_KEY1;
-	FLASH->MODEKEYR = FLASH_KEY2;
+	FLASH->MODEKEYR = FLASH_MODEKEYR_KEY1;
+	FLASH->MODEKEYR = FLASH_MODEKEYR_KEY2;
 
 	printf( "FLASH->CTLR = %08lx\n", FLASH->CTLR );
 	if( FLASH->CTLR & 0x8080 ) 
